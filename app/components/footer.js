@@ -1,6 +1,7 @@
 import SocialIcons from "@/app/components/SocialIcons";
 import Image from 'next/image'
 
+
 export default function Footer() {
     return (
         <footer className="bg-[#F4F4F4] text-black py-8">
