@@ -21,10 +21,10 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                         Découvrez votre <span className="text-green-600">abri sécurisé</span>
                     </h1>
-                    <p className="mt-4 text-xl text-gray-600">
+                    <p className="mt-4 text-xl text-white">
                         Protégez et rechargez votre moto en quelques étapes
                     </p>
 

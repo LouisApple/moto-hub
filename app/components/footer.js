@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-4 ml-20">
                         <Image
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWr5r596hI2WZPAqupnihYoVbSMXzSRJiuQ&s"
+                            src="/logo/logo.svg" // Chemin relatif à partir du dossier public
                             alt="Exemple d'image"
                             width={100} // Ajustez la largeur souhaitée
                             height={100} // Ajustez la hauteur souhaitée
