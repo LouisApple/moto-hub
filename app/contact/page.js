@@ -146,7 +146,9 @@ export default function Contact() {
                                                 checked={formData.subject === option.toLowerCase()}
                                                 onChange={(e) => setFormData({...formData, subject: e.target.value})}
                                                 className="h-4 w-4 text-green-600 focus:ring-green-500"
+                                                style={{accentColor: "green"}}
                                             />
+
                                             <label className="ml-2 text-sm text-gray-700">{option}</label>
                                         </div>
                                     ))}
