@@ -2,6 +2,8 @@ import {Input} from "@/components/ui/input";
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/components/ui/select";
 import {Button} from "@/components/ui/button";
 import {Search} from "lucide-react";
+import Link from 'next/link'; // Ajoute cet import en haut de ton fichier
+
 
 export default function MapSearch()
 {
@@ -22,29 +24,15 @@ export default function MapSearch()
 
 
             {/* Search Container */}
-            <div className="relative z-10 w-full max-w-3xl mx-auto px-4">
-                <div className="bg-white rounded-lg shadow-lg p-2 flex gap-2">
-                    <Input
-                        className="flex-1"
-                        placeholder="Prendre rendez-vous"
-                        type="text"
-                    />
-                    <Select>
-                        <SelectTrigger className="w-[180px]">
-                            <SelectValue placeholder="Sélectionner la ville"/>
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectItem value="paris">Paris</SelectItem>
-                            <SelectItem value="lyon">Lyon</SelectItem>
-                            <SelectItem value="marseille">Marseille</SelectItem>
-                            <SelectItem value="toulouse">Toulouse</SelectItem>
-                        </SelectContent>
-                    </Select>
-                    <Button size="icon" className="bg-green-600 hover:bg-green-700">
-                        <Search className="h-4 w-4"/>
-                    </Button>
-                </div>
+            <div className="relative z-10 w-full max-w-3xl mx-auto px-4 flex justify-center items-center">
+                <Link
+                    href="/contact"
+                    className="px-12 py-6 rounded-full bg-white text-green-600 mt-3 text-lg font-bold text-center"
+                >
+                    Nous contacter
+                </Link>
             </div>
+
         </div>
     )
 }

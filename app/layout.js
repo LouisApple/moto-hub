@@ -1,6 +1,7 @@
 import { Plus_Jakarta_Sans } from 'next/font/google'; // Importer la police Plus Jakarta Sans
 import './globals.css';
 import Footer from './components/footer';
+import Navbar from "@/components/ui/navbar";
 
 // Appliquer la police Plus Jakarta Sans avec une variable CSS
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -16,10 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <body className={`${plusJakartaSans.variable} antialiased`}>
-        {children}
-        <Footer />
+        <body className="flex flex-col min-h-screen">
+        <Navbar /> {/* Header fixé en haut */}
+        <main className="flex-grow">{children}</main> {/* Contenu principal */}
+        <Footer /> {/* Footer en bas */}
         </body>
         </html>
     );
 }
+

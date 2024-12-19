@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Search } from 'lucide-react'
+import Link from "next/link";
 
 export default function Hero() {
     const [selectedType, setSelectedType] = useState('particulier')
@@ -61,27 +62,13 @@ export default function Hero() {
                             Ville
                         </button>
                     </div>
-
-                    {/* Search bar */}
-                    <div className="mt-8 max-w-xl mx-auto">
-                        <div className="flex gap-2 bg-white p-2 rounded-lg shadow-lg">
-                            <input
-                                type="text"
-                                placeholder="Prendre rendez-vous"
-                                className="flex-1 px-4 py-2 border-0 focus:outline-none"
-                            />
-                            <div className="flex items-center px-4 border-l border-gray-300">
-                                <select className="py-2 border-0 focus:outline-none text-gray-600">
-                                    <option>Sélectionner la ville</option>
-                                    <option>Paris</option>
-                                    <option>Lyon</option>
-                                    <option>Marseille</option>
-                                </select>
-                            </div>
-                            <button className="bg-green-600 text-white p-3 rounded-lg hover:bg-green-700">
-                                <Search className="h-5 w-5"/>
-                            </button>
-                        </div>
+                    <div className="relative z-10 w-full max-w-3xl mx-auto px-4 flex justify-center items-center">
+                        <Link
+                            href="/contact"
+                            className="px-12 py-6 rounded-full bg-white text-green-600 mt-3 text-lg font-bold text-center"
+                        >
+                            Nous contacter
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,6 @@ import {StatsSection} from "@/components/ui/stats-section";
 export default function Home() {
   return (
       <div>
-          <Navbar/>
           <Hero/>
           <AboutSection/>
           <ProjectTimeline/>
